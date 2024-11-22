@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Ubuntu:wght@300&display=swap');
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Roboto', sans-serif; 
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2); /* Soft gradient background */
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.container {
+  background: #fff; /* White background for the calculator */
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  padding: 20px;
+  width: 320px;
+}
+
+.input {
+  width: 100%;
+  font-size: 24px;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  text-align: right;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+.button {
+  width: 66px;
+  padding: 15px;
+  margin: 5px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #4CAF50; /* Default button color */
+  transition: all 0.3s ease; /* Smooth hover effect */
+}
+
+.button:hover {
+  background-color: #45a049; /* Slightly darker green on hover */
+}
+
+.button:active {
+  transform: scale(0.95); /* Button "press" effect */
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.button.bg-red {
+  background-color: #f44336; /* Red for clear button */
+}
+
+.button.bg-red:hover {
+  background-color: #d32f2f;
+}
+
+.button.operator {
+  background-color: #2196F3; /* Blue for operator buttons */
+}
+
+.button.operator:hover {
+  background-color: #1976d2;
+}
